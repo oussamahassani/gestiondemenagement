@@ -1,0 +1,22 @@
+	<?php	
+	session_start (); 
+	include("connect.php");	
+	
+	$date=$_POST['date'];
+	$heure=$_POST['time'];	
+	$commercial=$_POST['commercial'];
+	$dem=$_POST['dem'];
+	$remarque=$_POST['remarque'];
+	
+	$req2=mysql_query("insert into source(couleur,nom_source,site) values ('$couleur','$source','$site')");
+	    
+	
+	if($req2)
+	{echo "truee";}else
+	{echo "false";}
+   header('location: ../tables/liste_source.php?a=1');
+?>	<script type="text/javascript">
+document.location.href="../tables/liste_source.php?a=1";
+</script>
+*/
+?>

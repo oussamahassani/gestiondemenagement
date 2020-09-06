@@ -1,0 +1,33 @@
+label.error {
+	font-size: 12px;
+	position: relative;
+	/*top: 46px;*/
+	z-index: 99;
+	height: 25px;
+	line-height: 25px;
+	background: none;
+	color: #e02121;
+	/*font-family: roboto-regular;*/
+	font-weight: 400;
+	margin-bottom: 0px;
+	/*margin-left:-169px*/
+}
+.fl-left {
+	float: right;
+	padding-right: 5px;
+}
+.overfl-auto {
+	overflow: auto;
+}
+.btn-fl-left {
+	float: left;
+}
+.mrg-35 {
+	margin: 35px 0;
+}
+.form-control.error {
+	border: 1px solid #f00;
+}
+#statut_relance-error, #date_relance-error {
+	position: absolute !important;
+}

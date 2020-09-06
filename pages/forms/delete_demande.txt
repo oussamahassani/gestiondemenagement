@@ -1,0 +1,19 @@
+$req2=mysql_query("DELETE FROM vehicule where id_vehicule='$id'");
+header('location: liste_vehicule.php');
+ <?php
+ // connection a la base de données
+  require_once '../../connect.php';
+ // recuperation de données de formulaire
+	$id=$_GET['id_dem'];
+					    
+	
+	
+	
+	$req=mysql_query("UPDATE devis SET confirm=1
+	where id_devis='$id_devis'");
+	
+	header('location: ../tables/liste_devis_conf.php');
+
+?><script type="text/javascript">
+document.location.href="../tables/liste_devis_conf.php";
+</script>
